@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      menu duoc
+    </ion-title>
+        <!-- menu botton -->
+        <ion-button slot="start"><ion-menu-button  menu = "first" ></ion-menu-button></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="principal">
+
+    <div class="principal1"></div>
+    <div class="principal2">
+
+    <!-- boton para ir a la pagina qr -->
+  <div class="botones1">
+  <button (click)="goToqr()" class="botonqr"> qr </button>
+
+</div>
+
+<div class="botones2">
+
+  <!-- boton para ir a la pagina info -->
+<button (click)="goToinfo()" class="botoninfo"> info </button>
+
+</div>
+
+<div class="botones3">
+  
+    <!-- boton para ir a la pagina lista -->
+  <button (click)="goTolista()" class="botonlista">asistencia</button>
+</div>
+</div>
+</div>
+
+</ion-content>

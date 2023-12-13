@@ -1,0 +1,37 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content [fullscreen]="true">
+<div class="principal">
+  <div class="header">
+    <img src="/assets/logo4.jpg" alt="">
+  </div>
+  <div class="contenido">
+    <h2>Iniciar sesion</h2>
+    <mat-form-field appearance="fill" (click)="animar()">
+      <mat-label>nombre de usuario</mat-label>
+      <input matInput (click)="animar()" [(ngModel)]="usuario">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>ingresa tu contraseña</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="clave">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="botones">
+      <button mat-flat-button color="dark" (click)="login()">
+        iniciar
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="select"></mat-icon>
+      </button>
+      <button mat-flat-button class="limpiar" (click)="limpiar()">
+        limpiar
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="phonelink_erase"></mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+</ion-content>

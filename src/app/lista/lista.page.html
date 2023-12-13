@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- titulo -->
+    <ion-title>Lista</ion-title>
+    <!-- boton marcha atras -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<div id = "lista">
+<h4 [routerLink]="['/qr']">Nueva asistencia</h4>
+<table>
+<tr>
+  <tr>N°</tr>
+  <tr>Fecha</tr>
+  <tr>Ramo</tr>
+  <tr>Alumno</tr>
+  <tr>Estado</tr>
+
+<tr *ngFor="let asist of lista;  index as i">
+  <td>{{i+1}}</td>
+  <td>{{asist.fecha}}</td>
+  <td>{{asist.ramo}}</td>
+  <td>{{alumno}}</td>
+  <td><ion-icon name="checkmark-circle-outline"></ion-icon></td>
+</tr>
+</table>
+</div>
+</ion-content>

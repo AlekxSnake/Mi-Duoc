@@ -1,0 +1,49 @@
+.principal{
+background-color: #ce8d1e;
+height: 100%;
+align-items: center;
+}
+.botones1{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    transform: translateY(330%);
+    
+}
+
+.botones2{
+    text-align: center;
+    position: absolute;
+    left: -3px;
+    right: 0px;
+    transform: translateY(40%);
+    
+}
+.botones2, text{
+    color: #ce8d1e;
+    
+}
+.contenido{
+    min-height: 100vh;
+    border: 2px red solid;
+    margin: 20vh 5vh;
+    
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .qr {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+  }
+  .botones3{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+  }

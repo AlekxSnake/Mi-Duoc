@@ -1,0 +1,13 @@
+/* iOS places the subtitle above the title */
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .principal{
+    background-color: #f2be46;
+    height: 100%;
+    width: 100%;
+    padding-top: 1px;
+    background-image: url('/assets/fondoo.gif');
+}

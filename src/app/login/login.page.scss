@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2, input, button{
+    font-family: 'Cairo', sans-serif;
+}
+
+h2{
+    color: #fff;
+}
+
+.header{
+    // background-image: url('/assets/logo4.jpg');
+    min-height: 25vh;
+    // background-size: cover;
+    width: 100%;
+    
+    // margin-bottom: 20px;
+
+    img{
+        animation: bajar 1s ease;
+    }
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-0px);
+        opacity: 1;
+    }
+
+}
+
+.principal{
+    background-color: #f2be46;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido{
+    width: 80%;
+    
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+mat-icon{
+    color: white;
+}
+
+.limpiar{
+    --background: #337b59;
+}
+
+input{
+    color: rgb(220, 220, 220);
+    font-weight: bold;
+}

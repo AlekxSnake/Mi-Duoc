@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- titulo -->
+    <ion-title>QR</ion-title>
+    <!-- boton marcha atras -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="principal">
+
+
+<div class="botones1">
+  <ion-button class="buttomQr" id="click-trigger" >GENERAR QR</ion-button>
+  <ion-popover trigger="click-trigger" triggerAction="click">
+    <ng-template>
+      <div class="img">
+        <div id="contenido">
+      <div #qrcode class="qr"></div>
+      
+      <input type="text" [(ngModel)]="textoQR">
+      <button (click)="generarQR()">Generar</button>
+      </div>
+      </div>
+      </ng-template>
+  </ion-popover>
+</div>
+<div class="botones2">
+  <ion-button (click)="animar2('texto2')">ACEPTAR POLITICA DE PRIVACIDAD</ion-button>
+    <div id="texto2">felicidades has aceptado la politica de privacidad acerca del qr !proceda a escanear¡</div>
+    
+</div>
+<div class="botones3">
+  <button (click)="leerQR()">Leer qr</button>
+  <button (click)="detenerScanner()">Detener</button> 
+  {{resultado}}
+</div>
+</div>
+
+
+
+
+</ion-content>
